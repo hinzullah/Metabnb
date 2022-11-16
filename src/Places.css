@@ -10,3 +10,7 @@
 .nfts{
     display: none;
 }
+.houses{
+    display: flex;
+    gap: 5px;
+}
