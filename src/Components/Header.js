@@ -5,17 +5,20 @@ import mbtoken from '../images/mbtoken.png'
 import metamask from '../images/metamask.png'
 import opensea from '../images/opensea.png'
 import './Header.css'
+import  { useState } from 'react'
+import Modal from './Modal'
 
 const Header = () => {
+    const [show, setShow] = useState(false)
   return (
     <div>
         <header className='header'>
-            <img className='logo' src={logo} alt='company logo'/>
+            <a href='/'><img className='logo' src={logo} alt='company logo'/></a>
             <ul>
                 <a href='#home'>
                     <li>Home</li>
                 </a>
-                <a href='#place'>
+                <a href='/places'>
                     <li>Place to stay</li>
                 </a>
                 <a href='#nfts'>
@@ -25,9 +28,11 @@ const Header = () => {
                     <li>Community</li>
                 </a>
             </ul>
+            <Modal show= {show} />
+            <button onClick={() => setShow(true)}><a href='connect'>Connect Wallet</a></button>
 
-            <button><a href='connect'>Connect Wallet</a></button>
         </header>
+        
         <div className='text'>
             <div>
                 <h1>Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span></h1>

@@ -1,0 +1,12 @@
+.houses{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin: 20px;
+}
+.cards {
+    display: none;
+}
+.nfts{
+    display: none;
+}
