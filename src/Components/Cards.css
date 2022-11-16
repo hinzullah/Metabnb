@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+*{
+    font-family: 'Red Rose';
+}
+.cards {
+    margin-top: 15%;
+    padding: 20px;
+    
+}
+.cards h2{
+    font-family: 'Red Rose';
+    font-style: normal;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 40px;
+    color: #000000;
+    background: linear-gradient(124.4deg, #000 10.8%, #000 87.34%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.cards img{
+    padding: 0 10px;
+    width: 260px;
+    height: 265px;
+}
+.nfts{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border: 1px solid #000000;
+}
+.words{
+    margin-top: 20px;
+    padding: 4rem;
+}
+.words h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    width: 346px;
+    color: #fff;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 30px;
+}
+.words p{
+    color: #fff;
+    width: 346px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.words button{
+    background: #fff;
+    border-radius: 8px;
+    color : #A02279 ;
+    height: 48px;
+    width: 156px;
+    border-radius: 1px solid #fff;
+}
+.aerial img{
+    padding: 3rem 6rem;
+    width: 500px;
+    height: 400px;
+}
+@media (max-width:968px) {
+    .words{
+        margin-top: 20px;
+        padding:3rem 0rem;
+    }
+    .words h2{
+        width: 306px;
+        padding-left: 10px;
+    }
+    .words p{
+        width: 306px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    .words button{
+        height: 38px;
+        width: 156px;
+    }
+    .aerial img{
+        padding: 3rem 1rem;
+        margin-right: 10px;
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (max-width:768px) {
+    .cards h2{
+        margin-bottom: 30px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .nfts{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .words{
+        margin-top: 20px;
+        padding: 1rem;
+    }
+    .aerial img{
+        padding: 1rem 0rem;
+        width: 350px;
+        height: 260px;
+    }
+}
